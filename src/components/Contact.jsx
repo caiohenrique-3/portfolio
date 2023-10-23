@@ -10,7 +10,7 @@ export default function Contact({ language }) {
     },
     "pt-BR": {
       heading: "Contato",
-      phoneLabel: "Phone",
+      phoneLabel: "Telefone",
       linkedinLabel: "Perfil no LinkedIn",
       githubLabel: "Perfil no GitHub",
     },
