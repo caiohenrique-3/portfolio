@@ -39,7 +39,7 @@ function App() {
       <About language={language} />
 
       <section id="projects">
-        <h2>Projects</h2>
+        <h2>{language === "en" ? "Projects" : "Projetos"}</h2>
         {projects}
       </section>
 
