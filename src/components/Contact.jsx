@@ -26,7 +26,7 @@ export default function Contact({ language }) {
           <li>Email: caiohenrique29@protonmail.com</li>
           <li>{phoneLabel}: +51 21 99350-2805</li>
           <li>
-            <a href="https://www.linkedin.com/in/caio-henrique-735a2325b/">
+            <a href="https://www.linkedin.com/in/caio-henrique-c7351/">
               <i className="fa fa-external-link" aria-hidden="true"></i>
               {linkedinLabel}
             </a>
