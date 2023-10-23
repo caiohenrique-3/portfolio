@@ -1,0 +1,24 @@
+#about {
+  max-inline-size: 66ch;
+  line-height: 1.5;
+}
+
+#about button {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin-block-start: 1rem;
+}
+
+#about button i {
+  font-size: 1rem;
+  vertical-align: middle;
+  padding-inline-end: 0.5rem;
+}
+
+#about button:hover,
+#about button:focus {
+  font-weight: 700;
+}
+
+#about button:hover {
+  cursor: pointer;
+}

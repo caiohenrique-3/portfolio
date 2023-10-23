@@ -1,0 +1,9 @@
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  padding-inline-end: 1rem;
+  font-size: 2rem;
+}

@@ -1,0 +1,63 @@
+#projects {
+  max-inline-size: 66ch;
+  line-height: 1.5;
+}
+
+.project {
+  padding: 1rem 1rem 1rem 1rem;
+  border: solid 0.1rem var(--text-color);
+}
+
+.project:not(.project:last-child) {
+  margin-block: 1rem 1rem;
+}
+
+.project .img-container {
+  display: flex;
+  block-size: auto;
+}
+
+.project img {
+  inline-size: 100%;
+}
+
+.project button {
+  border: none;
+  background-color: transparent;
+  color: var(--link-color);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.project ul {
+  list-style: none;
+}
+
+.project li:not(.project li:last-child) {
+  padding-block-end: 0.5rem;
+}
+
+.project li:first-child {
+  padding-block-start: 0.5rem;
+}
+
+.project a {
+  color: var(--link-color);
+}
+
+.project a,
+.project button {
+  text-underline-offset: 0.2rem;
+}
+
+.project button:focus,
+.project button:hover,
+.project a:focus,
+.project a:hover {
+  font-weight: 700;
+}
+
+.project i {
+  padding-inline-end: 0.5rem;
+}

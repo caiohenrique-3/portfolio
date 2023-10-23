@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  overflow-x: scroll;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li {
+  text-underline-offset: 0.3rem;
+  padding: 0 0.3rem 0 0.3rem;
+}
+
+header ul li a {
+  color: var(--link-color);
+}
+
+header ul li a:hover,
+header ul li a:focus {
+  font-weight: 700;
+}
+
+header ul li a:focus {
+  outline: solid 0.2rem var(--text-color);
+  outline-offset: 0.2rem;
+}
+
+.link-container {
+  margin-inline-end: auto;
+}

@@ -1,0 +1,23 @@
+#contact ul {
+  list-style: none;
+}
+
+#contact li a {
+  color: var(--link-color);
+  text-underline-offset: 0.2rem;
+}
+
+#contact li a:hover,
+#contact li a:focus {
+  font-weight: 700;
+}
+
+#contact li {
+  padding-block: 0.3rem 0.3rem;
+}
+
+#contact i {
+  vertical-align: middle;
+  padding-inline-end: 0.5rem;
+  color: var(--link-color);
+}

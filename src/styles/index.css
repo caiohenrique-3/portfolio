@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --link-color: blue;
+  --switch-bg-color: black;
+  --switch-text-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #0d1321;
+    --text-color: white;
+    --link-color: white;
+    --switch-bg-color: white;
+    --switch-text-color: black;
+  }
+}
+
+html {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+section {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+a:focus,
+button:focus {
+  outline: solid 0.1rem var(--text-color);
+  outline-offset: 0.2rem;
+}
