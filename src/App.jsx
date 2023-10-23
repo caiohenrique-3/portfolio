@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 // components
 import Header from "./components/Header";
 import Introduction from "./components/Introduction";
@@ -13,7 +15,6 @@ import "./styles/fonts.css";
 
 // data
 import projectsData from "./data/projectsData";
-import { useState } from "react";
 
 function App() {
   const [language, setLanguage] = useState("en");
