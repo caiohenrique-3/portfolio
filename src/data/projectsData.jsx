@@ -151,4 +151,41 @@ export default [
       "pt-BR": "Código fonte",
     },
   },
+
+  {
+    id: 5,
+    title: { en: "Meme Generator", "pt-BR": "Gerador de Memes" },
+    description: {
+      en: "An interactive meme generator.",
+      "pt-BR": "Um gerador de memes interativo.",
+    },
+    img:
+      "https://github.com/caiohenrique-3/meme-generator/blob/main/src/assets/showcase.png?raw=true",
+    imgAlt: {
+      en: "Image of the project",
+      "pt-BR": "Imagem do projeto",
+    },
+    showImageLabel: {
+      en: "Click to show image",
+      "pt-BR": "Clique para exibir a imagem",
+    },
+    hideImageLabel: {
+      en: "Click to hide image",
+      "pt-BR": "Clique para ocultar a imagem",
+    },
+    technologies: {
+      en: "Technologies used: React, Git",
+      "pt-BR": "Tecnologias usadas: React, Git",
+    },
+    demo: "https://caiohenrique-3.github.io/meme-generator/",
+    demoLabel: {
+      en: "Demo",
+      "pt-BR": "Demonstração",
+    },
+    sourceCode: "https://github.com/caiohenrique-3/meme-generator",
+    sourceCodeLabel: {
+      en: "Source code",
+      "pt-BR": "Código fonte",
+    },
+  },
 ];
