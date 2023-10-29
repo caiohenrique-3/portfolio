@@ -188,4 +188,45 @@ export default [
       "pt-BR": "Código fonte",
     },
   },
+
+  {
+    id: 6,
+    title: {
+      en: "Markdown Notes App",
+      "pt-BR": "Aplicativo de anotações Markdown",
+    },
+    description: {
+      en: "From your browser, create, edit and live preview markdown notes. ",
+      "pt-BR":
+        "Em seu navegador, crie, edite e visualize notas de markdown em tempo real. ",
+    },
+    img:
+      "https://github.com/caiohenrique-3/markdown-notes-app/blob/main/src/assets/showcase-1.png?raw=true",
+    imgAlt: {
+      en: "Image of the project",
+      "pt-BR": "Imagem do projeto",
+    },
+    showImageLabel: {
+      en: "Click to show image",
+      "pt-BR": "Clique para exibir a imagem",
+    },
+    hideImageLabel: {
+      en: "Click to hide image",
+      "pt-BR": "Clique para ocultar a imagem",
+    },
+    technologies: {
+      en: "Technologies used: React, Git",
+      "pt-BR": "Tecnologias usadas: React, Git",
+    },
+    demo: "https://caiohenrique-3.github.io/markdown-notes-app/",
+    demoLabel: {
+      en: "Demo",
+      "pt-BR": "Demonstração",
+    },
+    sourceCode: "https://github.com/caiohenrique-3/markdown-notes-app",
+    sourceCodeLabel: {
+      en: "Source code",
+      "pt-BR": "Código fonte",
+    },
+  },
 ];
