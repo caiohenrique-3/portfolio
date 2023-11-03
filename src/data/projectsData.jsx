@@ -269,4 +269,45 @@ export default [
       "pt-BR": "Código fonte",
     },
   },
+
+  {
+    id: 8,
+    title: {
+      en: "Animanga Quiz",
+      "pt-BR": "Animanga Quiz",
+    },
+    description: {
+      en: "A quiz game about japanese anime & manga.",
+      "pt-BR":
+        "Um jogo de perguntas e respostas sobre anime e mangá japoneses.",
+    },
+    img:
+      "https://github.com/caiohenrique-3/animanga-quiz/blob/main/src/assets/showcase.png?raw=true",
+    imgAlt: {
+      en: "Image of the project",
+      "pt-BR": "Imagem do projeto",
+    },
+    showImageLabel: {
+      en: "Click to show image",
+      "pt-BR": "Clique para exibir a imagem",
+    },
+    hideImageLabel: {
+      en: "Click to hide image",
+      "pt-BR": "Clique para ocultar a imagem",
+    },
+    technologies: {
+      en: "Technologies used: React, Git",
+      "pt-BR": "Tecnologias usadas: React, Git",
+    },
+    demo: "https://caiohenrique-3.github.io/animanga-quiz/",
+    demoLabel: {
+      en: "Demo",
+      "pt-BR": "Demonstração",
+    },
+    sourceCode: "https://github.com/caiohenrique-3/animanga-quiz",
+    sourceCodeLabel: {
+      en: "Source code",
+      "pt-BR": "Código fonte",
+    },
+  },
 ];
