@@ -310,4 +310,46 @@ export default [
       "pt-BR": "Código fonte",
     },
   },
+
+  {
+    id: 9,
+    title: {
+      en: "GitHub Profile Checker",
+      "pt-BR": "Verificador de perfil do GitHub",
+    },
+    description: {
+      en:
+        "This mini-project lets you enter a username and instantly retrieve the associated profile image, name, bio, and a direct link to the user's GitHub profile.",
+      "pt-BR":
+        "Esse miniprojeto permite que você insira um nome de usuário e recupere instantaneamente a imagem de perfil associada, o nome, a biografia e um link direto para o perfil do usuário no GitHub.",
+    },
+    img:
+      "https://github.com/caiohenrique-3/github-profile-checker/blob/main/src/assets/showcase-1.png?raw=true",
+    imgAlt: {
+      en: "Image of the project",
+      "pt-BR": "Imagem do projeto",
+    },
+    showImageLabel: {
+      en: "Click to show image",
+      "pt-BR": "Clique para exibir a imagem",
+    },
+    hideImageLabel: {
+      en: "Click to hide image",
+      "pt-BR": "Clique para ocultar a imagem",
+    },
+    technologies: {
+      en: "Technologies used: React, TailwindCSS, Git",
+      "pt-BR": "Tecnologias usadas: React, TailwindCSS, Git",
+    },
+    demo: "https://caiohenrique-3.github.io/github-profile-checker/",
+    demoLabel: {
+      en: "Demo",
+      "pt-BR": "Demonstração",
+    },
+    sourceCode: "https://github.com/caiohenrique-3/github-profile-checker",
+    sourceCodeLabel: {
+      en: "Source code",
+      "pt-BR": "Código fonte",
+    },
+  },
 ];
