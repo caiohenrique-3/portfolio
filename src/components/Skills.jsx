@@ -35,6 +35,9 @@ export default function Skills({ language }) {
           <li>
             <img src="./github-white.svg" aria-hidden="true" />GitHub
           </li>
+          <li>
+            <img src="./tailwindcss.svg" aria-hidden="true" />Tailwind
+          </li>
         </ul>
       </section>
     </>
