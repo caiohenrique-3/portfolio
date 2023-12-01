@@ -1,5 +1,25 @@
+<script>
+  import { onMount } from "svelte";
+
+  let blurHeaderBg = false;
+
+  onMount(() => {
+    function handleScroll() {
+      blurHeaderBg = window.scrollY > 0;
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
+</script>
+
 <header
-  class="flex p-2 justify-center items-center text-center sticky inset-x-0 top-0"
+  class="flex p-2 justify-center items-center text-center sticky inset-x-0 top-0 {blurHeaderBg
+    ? 'backdrop-filter backdrop-blur-sm'
+    : ''}"
 >
   <nav class="flex">
     <ul class="flex list-none text-white">
