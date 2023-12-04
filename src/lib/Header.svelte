@@ -19,7 +19,7 @@
 <header
   class="flex p-2 justify-center items-center text-center sticky inset-x-0 top-0 {blurHeaderBg
     ? 'backdrop-filter backdrop-blur-sm'
-    : ''}"
+    : ''} bg-emerald-700 bg-opacity-50 z-50"
 >
   <nav class="flex">
     <ul class="flex list-none text-white">
