@@ -109,12 +109,12 @@
           </div>
           <h3 class="text-xl font-bold pb-1">{project.title}</h3>
           <p>{project.description}</p>
-          <div class="max-w-sm mx-auto">
+          <div class="max-w-sm mx-auto h-64">
             <img
               src={project.img}
               alt="Showcase"
               loading="lazy"
-              class="mx-auto"
+              class="mx-auto h-full object-cover"
             />
           </div>
           <ul>
