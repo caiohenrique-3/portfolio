@@ -51,7 +51,7 @@
     </select>
   </div>
 
-  <swiper-container loop="true" slides-per-view="2">
+  <swiper-container loop="true" slides-per-view="1">
     {#each projects.filter((project) => currentCategory === "All" || project.technologies.includes(currentCategory)) as project (project.id)}
       <swiper-slide key={project.id}>
         <div class="project">
