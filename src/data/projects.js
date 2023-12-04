@@ -154,4 +154,14 @@ export default [
     demo: "",
     sourceCode: "https://github.com/caiohenrique-3/web-scraper-cli",
   },
+  {
+    id: 15,
+    title: "Fatos sobre o React",
+    description: "Uma pequena coleção de fatos interessantes sobre o React.js",
+    img:
+      "https://raw.githubusercontent.com/caiohenrique-3/react-facts/main/src/assets/showcase.png",
+    technologies: ["React"],
+    demo: "https://caiohenrique-3.github.io/react-facts/",
+    sourceCode: "https://github.com/caiohenrique-3/react-facts",
+  },
 ];
