@@ -5,7 +5,7 @@ export default [
     description: "A página de bem-vindas de um site de streaming de animes.",
     img:
       "https://github.com/caiohenrique-3/anime-streaming-landing-page/raw/main/showcase-1.png",
-    technologies: ["JavaScript"],
+    technologies: ["HTML", "CSS", "JavaScript"],
     demo: "https://caiohenrique-3.github.io/anime-streaming-landing-page/",
     sourceCode:
       "https://github.com/caiohenrique-3/anime-streaming-landing-page",
@@ -97,7 +97,7 @@ export default [
       "Esse miniprojeto permite que você insira um nome de usuário e recupere instantaneamente a imagem de perfil associada, o nome, a biografia e um link direto para o perfil do usuário no GitHub.",
     img:
       "https://raw.githubusercontent.com/caiohenrique-3/github-profile-checker/main/src/assets/showcase-1.png",
-    technologies: ["React"],
+    technologies: ["React", "TailwindCSS"],
     demo: "https://caiohenrique-3.github.io/github-profile-checker/",
     sourceCode: "https://github.com/caiohenrique-3/github-profile-checker",
   },

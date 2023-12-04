@@ -8,6 +8,26 @@
   // data
   import projects from "../data/projects";
 
+  // imgs
+  import htmlLogo from "../../public/icons/html.svg";
+  import cssLogo from "../../public/icons/css.png";
+  import jsLogo from "../../public/icons/javascript.svg";
+  import reactLogo from "../../public/icons/react.svg";
+  import tailwindLogo from "../../public/icons/tailwindcss.svg";
+  import pythonLogo from "../../public/icons/python.svg";
+  import javaLogo from "../../public/icons/java.svg";
+
+  // Display logo of the technologies according to 'technologies' key
+  const techLogos = {
+    HTML: htmlLogo,
+    CSS: cssLogo,
+    JavaScript: jsLogo,
+    React: reactLogo,
+    TailwindCSS: tailwindLogo,
+    Python: pythonLogo,
+    Java: javaLogo,
+  };
+
   // Show/hide project showcase
   let showImage = {};
 
@@ -92,8 +112,13 @@
         lazy="true"
       >
         <div class="project">
+          <div class="flex">
+            {#each project.technologies as tech}
+              <img src={techLogos[tech]} alt={tech} class="w-4 pb-4 mx-1 first:ml-auto" />
+            {/each}
+          </div>
           <h3 class="text-xl font-bold pb-1">{project.title}</h3>
-          <p>{project.description} {project.technologies}</p>
+          <p>{project.description}</p>
           <div class="max-w-sm mx-auto">
             <img
               src={project.img}
