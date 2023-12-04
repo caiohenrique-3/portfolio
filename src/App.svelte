@@ -4,6 +4,7 @@
   import About from "./lib/About.svelte";
   import Projects from "./lib/Projects.svelte";
   import Skills from "./lib/Skills.svelte";
+  import Contact from "./lib/Contact.svelte";
 </script>
 
 <div class="min-h-screen w-full bg-slate-800">
@@ -12,6 +13,7 @@
   <About />
   <Projects />
   <Skills />
+  <Contact />
 
   <div class="p-6 text-white">
     Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
