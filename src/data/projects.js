@@ -122,4 +122,14 @@ export default [
     demo: "",
     sourceCode: "https://github.com/caiohenrique-3/Yani",
   },
+  {
+    id: 12,
+    title: "MusikMorpher",
+    description: "Script that speeds up & slows down your songs, using ffmpeg.",
+    img:
+      "https://raw.githubusercontent.com/caiohenrique-3/musik-morpher/main/showcase.png",
+    technologies: ["Python"],
+    demo: "",
+    sourceCode: "https://github.com/caiohenrique-3/musik-morpher",
+  },
 ];
