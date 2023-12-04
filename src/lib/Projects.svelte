@@ -34,6 +34,19 @@
       ).length;
     }
   }
+
+  // Project swiper navigation buttons
+  function handleNavButtonClick(direction) {
+    const swiperEl = document.querySelector("swiper-container");
+
+    if (swiperEl) {
+      if (direction === "prev") {
+        swiperEl.swiper.slidePrev();
+      } else if (direction === "next") {
+        swiperEl.swiper.slideNext();
+      }
+    }
+  }
 </script>
 
 <main id="projetos" class="text-white p-6 max-w-4xl mx-auto">
@@ -95,4 +108,23 @@
       </swiper-slide>
     {/each}
   </swiper-container>
+  <div class="flex m-4">
+    <button
+      type="button"
+      on:click={() => handleNavButtonClick("prev")}
+      aria-label="Previous Slide"
+      class="w-2/4 h-12 rounded-md mx-2 hover:bg-emerald-300 hover:font-bold bg-white text-black"
+    >
+      <i class="fa fa-angle-left text-2xl" aria-hidden="true" />
+    </button>
+
+    <button
+      type="button"
+      on:click={() => handleNavButtonClick("next")}
+      aria-label="Next Slide"
+      class="w-2/4 h-12 rounded-md mx-2 hover:bg-emerald-300 hover:font-bold bg-white text-black"
+    >
+      <i class="fa fa-angle-right text-2xl" aria-hidden="true" />
+    </button>
+  </div>
 </main>
