@@ -143,4 +143,15 @@ export default [
     demo: "",
     sourceCode: "https://github.com/caiohenrique-3/most-starred-checker",
   },
+  {
+    id: 14,
+    title: "Mini Web Scraper",
+    description:
+      "Um aplicativo de terminal que extrai o conteúdo de texto de uma página da Web usando seletores CSS.",
+    img:
+      "https://raw.githubusercontent.com/caiohenrique-3/web-scraper-cli/main/showcase.png",
+    technologies: ["Java"],
+    demo: "",
+    sourceCode: "https://github.com/caiohenrique-3/web-scraper-cli",
+  },
 ];
