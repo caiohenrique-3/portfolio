@@ -115,7 +115,7 @@ export default [
     id: 11,
     title: "Yani",
     description:
-      "My first programming project ever, a simple music player made in Python",
+      "Meu primeiro projeto de programação: um reprodutor de música simples, feito em Python.",
     img:
       "https://user-images.githubusercontent.com/104094613/222551116-934329f0-fff5-45de-b92b-7cc9d0b0bf4d.png",
     technologies: ["Python"],
@@ -125,7 +125,8 @@ export default [
   {
     id: 12,
     title: "MusikMorpher",
-    description: "Script that speeds up & slows down your songs, using ffmpeg.",
+    description:
+      "Script que acelera e desacelera suas músicas, usando o ffmpeg como dependência.",
     img:
       "https://raw.githubusercontent.com/caiohenrique-3/musik-morpher/main/showcase.png",
     technologies: ["Python"],
