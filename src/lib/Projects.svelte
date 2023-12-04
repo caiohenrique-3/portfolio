@@ -64,50 +64,6 @@
     </select>
   </div>
 
-  <swiper-container loop="true" slides-per-view="1">
-    {#each projects.filter((project) => currentCategory === "All" || project.technologies.includes(currentCategory)) as project (project.id)}
-      <swiper-slide key={project.id}>
-        <div class="project">
-          <h3>{project.title}</h3>
-          <p>{project.description} {project.technologies}</p>
-          <div class="img-container">
-            {#if showImage[project.id]}
-              <img src={project.img} alt="Showcase" loading="lazy" />
-            {/if}
-          </div>
-          <ul>
-            <li>
-              <button on:click={() => handleClick(project.id)}>
-                <i
-                  class={`fa ${
-                    showImage[project.id] ? "fa-eye-slash" : "fa-eye"
-                  }`}
-                  aria-hidden="true"
-                />
-                {showImage[project.id]
-                  ? "Clique para ocultar a imagem"
-                  : "Clique para exibir a imagem"}
-              </button>
-            </li>
-            {#if project.demo !== ""}
-              <li>
-                <a href={project.demo}>
-                  <i class="fa fa-external-link" aria-hidden="true" />
-                  Demonstração
-                </a>
-              </li>
-            {/if}
-            <li>
-              <a href={project.sourceCode}>
-                <i class="fa fa-github-alt" aria-hidden="true" />
-                Código fonte
-              </a>
-            </li>
-          </ul>
-        </div>
-      </swiper-slide>
-    {/each}
-  </swiper-container>
   <div class="flex m-4">
     <button
       type="button"
@@ -127,4 +83,49 @@
       <i class="fa fa-angle-right text-2xl" aria-hidden="true" />
     </button>
   </div>
+
+  <swiper-container loop="true" slides-per-view="1">
+    {#each projects.filter((project) => currentCategory === "All" || project.technologies.includes(currentCategory)) as project (project.id)}
+      <swiper-slide
+        key={project.id}
+        class="text-center border-white border p-6"
+        lazy="true"
+      >
+        <div class="project">
+          <h3 class="text-xl font-bold pb-1">{project.title}</h3>
+          <p>{project.description} {project.technologies}</p>
+          <div class="max-w-sm mx-auto">
+            <img
+              src={project.img}
+              alt="Showcase"
+              loading="lazy"
+              class="mx-auto"
+            />
+          </div>
+          <ul>
+            {#if project.demo !== ""}
+              <li class="pt-2 pb-2">
+                <a
+                  href={project.demo}
+                  class="underline underline-offset-4 hover:text-emerald-300"
+                >
+                  <i class="fa fa-external-link" aria-hidden="true" />
+                  Demonstração
+                </a>
+              </li>
+            {/if}
+            <li class="pt-2 pb-2">
+              <a
+                href={project.sourceCode}
+                class="underline underline-offset-4 hover:text-emerald-300"
+              >
+                <i class="fa fa-github-alt" aria-hidden="true" />
+                Código fonte
+              </a>
+            </li>
+          </ul>
+        </div>
+      </swiper-slide>
+    {/each}
+  </swiper-container>
 </main>
