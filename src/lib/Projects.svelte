@@ -8,13 +8,13 @@
   import projects from "../data/projects";
 
   // imgs
-  import htmlLogo from "../../public/icons/html.svg";
-  import cssLogo from "../../public/icons/css.png";
-  import jsLogo from "../../public/icons/javascript.svg";
-  import reactLogo from "../../public/icons/react.svg";
-  import tailwindLogo from "../../public/icons/tailwindcss.svg";
-  import pythonLogo from "../../public/icons/python.svg";
-  import javaLogo from "../../public/icons/java.svg";
+  import htmlLogo from "../assets/html.svg";
+  import cssLogo from "../assets/css.png";
+  import jsLogo from "../assets/javascript.svg";
+  import reactLogo from "../assets/react.svg";
+  import tailwindLogo from "../assets/tailwindcss.svg";
+  import pythonLogo from "../assets/python.svg";
+  import javaLogo from "../assets/java.svg";
 
   // Display logo of the technologies according to 'technologies' key
   const techLogos = {
