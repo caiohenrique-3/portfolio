@@ -76,12 +76,14 @@
                   : "Clique para exibir a imagem"}
               </button>
             </li>
-            <li>
-              <a href={project.demo}>
-                <i class="fa fa-external-link" aria-hidden="true" />
-                Demonstração
-              </a>
-            </li>
+            {#if project.demo !== ""}
+              <li>
+                <a href={project.demo}>
+                  <i class="fa fa-external-link" aria-hidden="true" />
+                  Demonstração
+                </a>
+              </li>
+            {/if}
             <li>
               <a href={project.sourceCode}>
                 <i class="fa fa-github-alt" aria-hidden="true" />

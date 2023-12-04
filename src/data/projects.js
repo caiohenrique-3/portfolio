@@ -111,4 +111,15 @@ export default [
     demo: "https://all-goods-galaxy.vercel.app/",
     sourceCode: "https://github.com/caiohenrique-3/all-goods-galaxy",
   },
+  {
+    id: 11,
+    title: "Yani",
+    description:
+      "My first programming project ever, a simple music player made in Python",
+    img:
+      "https://user-images.githubusercontent.com/104094613/222551116-934329f0-fff5-45de-b92b-7cc9d0b0bf4d.png",
+    technologies: ["Python"],
+    demo: "",
+    sourceCode: "https://github.com/caiohenrique-3/Yani",
+  },
 ];
