@@ -101,4 +101,14 @@ export default [
     demo: "https://caiohenrique-3.github.io/github-profile-checker/",
     sourceCode: "https://github.com/caiohenrique-3/github-profile-checker",
   },
+  {
+    id: 10,
+    title: "AllGoodsGalaxy",
+    description: "Um site de e-commerce fake, feito com fakestoreapi.",
+    img:
+      "https://raw.githubusercontent.com/caiohenrique-3/all-goods-galaxy/main/src/assets/showcase.png",
+    technologies: ["React"],
+    demo: "https://all-goods-galaxy.vercel.app/",
+    sourceCode: "https://github.com/caiohenrique-3/all-goods-galaxy",
+  },
 ];
