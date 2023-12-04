@@ -37,20 +37,19 @@
 </script>
 
 <main id="projetos" class="text-white p-6 max-w-4xl mx-auto">
-  <h2 class="text-3xl text-emerald-300 pb-3">Projetos</h2>
+  <div class="flex pb-6">
+    <h2 class="text-3xl text-emerald-300 pb-3 pr-3">Projetos</h2>
 
-  <button on:click={() => (currentCategory = "All")}
-    >All ({countProjects("All")})</button
-  >
-  <button on:click={() => (currentCategory = "JavaScript")}
-    >JavaScript ({countProjects("JavaScript")})</button
-  >
-  <button on:click={() => (currentCategory = "React")}
-    >React ({countProjects("React")})</button
-  >
-  <button on:click={() => (currentCategory = "Java")}
-    >Java ({countProjects("Java")})</button
-  >
+    <select bind:value={currentCategory} class="text-black pl-3 h-10">
+      <option value="All">All ({countProjects("All")})</option>
+      <option value="JavaScript"
+        >JavaScript ({countProjects("JavaScript")})</option
+      >
+      <option value="React">React ({countProjects("React")})</option>
+      <option value="Java">Java ({countProjects("Java")})</option>
+      <option value="Python">Python ({countProjects("Python")})</option>
+    </select>
+  </div>
 
   <swiper-container loop="true" slides-per-view="2">
     {#each projects.filter((project) => currentCategory === "All" || project.technologies.includes(currentCategory)) as project (project.id)}
