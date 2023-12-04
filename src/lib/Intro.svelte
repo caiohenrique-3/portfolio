@@ -1,4 +1,4 @@
-<section id="intro" class="p-6 ml-0 mr-auto text-center bg-hero-pattern">
+<section id="intro" class="p-6 ml-0 mr-auto text-center">
   <div class="max-w-sm text-center mx-auto text-white text-2xl">
     <h1 class="text-3xl pb-6 pt-6">Bem vindo ao meu portfólio!</h1>
     <p>
