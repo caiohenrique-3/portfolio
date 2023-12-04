@@ -1,6 +1,5 @@
 <script>
   // dependencies
-  import { onMount } from "svelte";
   import { register } from "swiper/element/bundle";
 
   register();
@@ -27,19 +26,6 @@
     Python: pythonLogo,
     Java: javaLogo,
   };
-
-  // Show/hide project showcase
-  let showImage = {};
-
-  onMount(() => {
-    projects.forEach((project) => {
-      showImage[project.id] = false;
-    });
-  });
-
-  function handleClick(id) {
-    showImage[id] = !showImage[id];
-  }
 
   // Display projects based on category
   let currentCategory = "All";
@@ -114,7 +100,11 @@
         <div class="project">
           <div class="flex">
             {#each project.technologies as tech}
-              <img src={techLogos[tech]} alt={tech} class="w-4 pb-4 mx-1 first:ml-auto" />
+              <img
+                src={techLogos[tech]}
+                alt={tech}
+                class="w-4 pb-4 mx-1 first:ml-auto"
+              />
             {/each}
           </div>
           <h3 class="text-xl font-bold pb-1">{project.title}</h3>
