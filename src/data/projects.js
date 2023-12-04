@@ -132,4 +132,15 @@ export default [
     demo: "",
     sourceCode: "https://github.com/caiohenrique-3/musik-morpher",
   },
+  {
+    id: 13,
+    title: "Verificador de projetos com mais estrelas no GitHub",
+    description:
+      "Um aplicativo de terminal que recebe duas datas e retorna os projetos do GitHub mais estrelados no intervalo de datas.",
+    img:
+      "https://raw.githubusercontent.com/caiohenrique-3/most-starred-checker/main/showcase.png",
+    technologies: ["Java"],
+    demo: "",
+    sourceCode: "https://github.com/caiohenrique-3/most-starred-checker",
+  },
 ];
