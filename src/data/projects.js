@@ -165,4 +165,14 @@ export default [
     demo: "https://caiohenrique-3.github.io/react-facts/",
     sourceCode: "https://github.com/caiohenrique-3/react-facts",
   },
+  {
+    id: 16,
+    title: "Gerenciador de Lista de Tarefas",
+    description: "Gerencie uma lista de tarefas direto do seu terminal.",
+    img:
+      "https://raw.githubusercontent.com/caiohenrique-3/todo-list-manager/main/showcase.png",
+    technologies: ["Java"],
+    demo: "",
+    sourceCode: "https://github.com/caiohenrique-3/todo-list-manager",
+  },
 ];
