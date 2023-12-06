@@ -1,6 +1,8 @@
 <script>
   // dependencies
   import { register } from "swiper/element/bundle";
+  import { writable } from "svelte/store";
+  import { onMount } from "svelte";
 
   register();
 
@@ -53,6 +55,27 @@
       }
     }
   }
+
+  // Create a store to hold the state of the modal (open/closed)
+  let modalOpen = writable(false);
+
+  // Create a store to hold the current image to be displayed in the modal
+  let currentImage = writable("");
+
+  // Function to close the modal when ESC key in pressed
+  function handleKeydown(event) {
+    if (event.key === "Escape") {
+      modalOpen.set(false);
+    }
+  }
+
+  // Add event listener for keydown event when the component mounts
+  onMount(() => {
+    window.addEventListener("keydown", handleKeydown);
+    return () => {
+      window.removeEventListener("keydown", handleKeydown);
+    };
+  });
 </script>
 
 <main id="projetos" class="text-white p-6 max-w-4xl mx-auto">
@@ -98,6 +121,14 @@
         lazy="true"
       >
         <div class="project">
+          <button
+            class="uppercase bg-white text-black rounded p-1 mb-5 hover:bg-emerald-300"
+            id="expand-image"
+            on:click={() => {
+              modalOpen.set(true);
+              currentImage.set(project.img);
+            }}><i class="fa fa-eye pr-1" />Expandir imagem</button
+          >
           <div class="flex">
             {#each project.technologies as tech}
               <img
@@ -109,7 +140,7 @@
           </div>
           <h3 class="text-xl font-bold pb-1">{project.title}</h3>
           <p>{project.description}</p>
-          <div class="max-w-sm mx-auto h-64">
+          <div class="max-w-sm mx-auto h-64 relative">
             <img
               src={project.img}
               alt="Showcase"
@@ -143,4 +174,21 @@
       </swiper-slide>
     {/each}
   </swiper-container>
+
+  {#if $modalOpen}
+    <div class="fixed inset-0 flex items-center justify-center z-50">
+      <div
+        class="bg-black bg-opacity-75 fixed inset-0"
+        on:click={() => modalOpen.set(false)}
+      />
+      <img
+        src={$currentImage}
+        class="relative z-10 max-w-full max-h-full m-8 rounded p-8"
+      />
+      <button
+        class="absolute top-0 right-0 p-4 text-white text-2xl"
+        on:click={() => modalOpen.set(false)}>×</button
+      >
+    </div>
+  {/if}
 </main>
